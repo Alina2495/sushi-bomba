@@ -1,0 +1,183 @@
+// variables
+@white: #fff;
+@gray: #8D8D8D;
+@gray2: #CED4DA;
+@black: #000;
+@black2: #323232;
+@black3: #202020;
+@orange: #FF9100;
+@green: #37C8AB;
+@pink: #FF4343;
+
+body {
+    background-color: #FDFDFD;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+h1, h2 {
+    margin-bottom: 30px;
+}
+h6 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.ask-section {
+    a {
+        color: @white;
+        background-color: @orange;
+    }
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    padding-bottom: 20px !important;
+    filter: drop-shadow(0px 0px 15px #E1E1E3);
+    font-size: 14px;
+    .img {
+        border-radius: 8px;
+    }
+    .sale {
+        color: @white;
+        background-color: @green;
+        top: 25px;
+        left: 25px;
+    }
+    .title, .weight {
+        color: @black3;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .weight {
+        font-size: 14px;
+    }
+    .btn-group {
+        z-index: 1;
+        font-size: 0;
+        display: block;
+        .btn-check:checked + .btn {
+            color: @black3;
+            background-color: @white;
+            box-shadow: none;
+        }
+        .btn {
+            font-size: 14px;
+            color: @gray;
+            background-color: #E9ECEF;
+            border: 1px solid #CED4DA;
+        }
+    }
+    .whish {
+        width: 32px;
+        height: 32px;
+        top: 24px;
+        right: 28px;
+        z-index: 1;
+        &.active svg path {
+            fill: @pink;
+        }
+    }
+    ins {
+        font-size: 18px;
+        color: @orange;
+    }
+    .desc, del {
+        color: @gray;
+    }
+    .cart-btn {
+        z-index: 1;
+        font-size: 16px;
+        font-weight: 600;
+        color: @white;
+        bottom: -25px;
+        right: 15px;
+        &-inner {
+            filter: drop-shadow(0px 0px 2px rgba(255, 74, 139, 0.7));
+            background-color: @orange;
+        }
+    }
+}
+.promotions-section {
+    font-size: 14px;
+    a {
+        color: @orange;
+    }
+    .swiper-slide {
+        background: @white;
+        box-shadow: 0px 0px 15px #E1E1E3;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        height: unset;
+    }
+    .swiper-button {
+        &-prev  {
+            left: unset;
+            right: 4%;
+        }
+        &-next {
+            right: 0;
+        }
+    }
+}
+.comments-section {
+    button {
+        color: @orange;
+        font-weight: 600;
+    }
+    .swiper-pagination {
+        font-size: 24px;
+    }
+    .swiper-button {
+        &-prev {
+            left: 44%;
+        }
+        &-next {
+            right: 42%;
+        }
+    }
+}
+.contacts-section {
+    font-size: 16px;
+}
+footer {
+    color: @white;
+    font-size: 16px;
+    background-color: @black2;
+    a {
+        color: inherit;
+        &:hover {
+            color: inherit;
+            opacity: 0.9;
+        }
+    }
+    address {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1464px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+a {
+    text-decoration: none;
+}
+.stretched-link {
+    &::after {
+        z-index: 0;
+    }
+}
+.swiper-button {
+    &-prev, &-next {
+        &::after {
+            display: none;
+        }
+    }
+}
