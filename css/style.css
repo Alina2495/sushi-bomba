@@ -47,6 +47,18 @@ header {
   filter: drop-shadow(0px 0px 15px #E1E1E3);
   font-size: 14px;
 }
+.card .img-wrapper {
+  position: relative;
+  padding-top: 83.25%;
+}
+.card .img-wrapper img {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .card .img {
   border-radius: 8px;
 }
@@ -219,4 +231,17 @@ a:hover {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #000;
+  content: "\2192";
+}
+.breadcrumb-item {
+  font-size: 14px;
+  color: #000;
+}
+.breadcrumb-item.active {
+  color: currentColor;
 }

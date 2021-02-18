@@ -52,6 +52,18 @@ header {
     padding-bottom: 25px !important;
     filter: drop-shadow(0px 0px 15px #E1E1E3);
     font-size: 14px;
+    .img-wrapper {
+        position: relative;
+        padding-top: 83.25%;
+        img {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
     .img {
         border-radius: 8px;
     }
@@ -237,5 +249,19 @@ a {
         &::after {
             display: none;
         }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: @black;
+    content: "\2192";
+}
+.breadcrumb-item {
+    font-size: 14px;
+    color: @black;
+    &.active {
+        color: currentColor;
     }
 }

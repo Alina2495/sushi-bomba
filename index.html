@@ -24,8 +24,8 @@
         <div class="container p-3">
             <div class="row align-items-center justify-content-between">
                 <!-- лого -->
-                <div class="col-1 col-lg-2 py-3 flex-shrink-1">
-                    <img src="img/images/logo.png" alt="">
+                <div class="col-1 col-lg-2 py-3 d-flex">
+                    <img class="flex-shrink-1" src="img/images/logo.png" alt="">
                 </div>
                 <!-- меню -->
                 <nav class="col-lg-4 py-2 text-nowrap">
@@ -33,7 +33,7 @@
                         <li><a href="menu.html">Меню</a></li>
                         <li><a href="sales.html">Акции</a></li>
                         <li><a href="payment.html">Доставка и оплата</a></li>
-                        <li><a href="">Отзывы</a></li>
+                        <li><a href="comments.html">Отзывы</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
@@ -186,11 +186,11 @@
                     <!-- popular -->
                     <div class="tab-pane fade show active" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
 
-                        <div class="row row-cols-auto row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        <div class="row row-cols-auto row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
                             <div class="mb-5">
                                 <div class="card rounded-4 p-3 bg-white h-100">
-                                    <div class="rounded-2 overflow-hidden mb-3">
-                                        <img class="img-fluid" src="img/images/product.jpg" alt="">
+                                    <div class="position-relative rounded-2 overflow-hidden mb-3 img-wrapper">
+                                        <img class="position-absolute" src="img/images/promotion.jpg" alt="">
                                     </div>
                                     <div class="sale position-absolute rounded-2 py-2 px-3 lh-1 color-white">10%</div>
                                     <button data-bs-toggle="button" class="whish bg-white rounded-circle position-absolute border-0">
@@ -228,10 +228,10 @@
                             </div>
                             <div class="mb-5">
                                 <div class="card rounded-4 p-3 bg-white h-100">
-                                    <div class="rounded-2 overflow-hidden mb-3">
-                                        <img class="img-fluid" src="img/images/product2.jpg" alt="">
+                                    <div class="rounded-2 overflow-hidden mb-3 position-relative img-wrapper">
+                                        <img class="position-absolute" src="img/images/product2.jpg" alt="">
                                     </div>
-                                    <button data-bs-toggle="button" class="whish active bg-white rounded-circle position-absolute border-0">
+                                    <button data-bs-toggle="button" class="whish bg-white rounded-circle position-absolute border-0">
                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.22318 16.2905L9.22174 16.2892C6.62662 13.936 4.55384 12.0538 3.1178 10.2981C1.69324 8.55647 1 7.06152 1 5.5C1 2.97228 2.97228 1 5.5 1C6.93721 1 8.33224 1.67394 9.23865 2.73834L10 3.6324L10.7614 2.73834C11.6678 1.67394 13.0628 1 14.5 1C17.0277 1 19 2.97228 19 5.5C19 7.06153 18.3068 8.55653 16.882 10.2996C15.4459 12.0566 13.3734 13.9409 10.7786 16.2989C10.7782 16.2993 10.7778 16.2996 10.7775 16.2999L10.0026 17L9.22318 16.2905Z" stroke="#FF4343" stroke-width="2"/>
                                         </svg>    
@@ -528,7 +528,7 @@
                         <li><a href="menu.html">Меню</a></li>
                         <li><a href="sales.html">Акции</a></li>
                         <li><a href="payment.html">Доставка и оплата</a></li>
-                        <li><a href="">Отзывы</a></li>
+                        <li><a href="comments.html">Отзывы</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
