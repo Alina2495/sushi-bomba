@@ -3,7 +3,7 @@ body {
   color: #000;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 130%;
 }
 h1,
@@ -24,14 +24,26 @@ h6 {
   font-weight: 600;
   font-size: 20px;
 }
-.ask-section a {
-  color: #fff;
-  background-color: #FF9100;
+header {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.dishes-section .nav-link {
+  padding: 10px 0;
+  margin-right: 20px;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+.dishes-section .nav-link:hover {
+  border-color: transparent;
+}
+.dishes-section .nav-link.active {
+  color: #FF9100;
+  border-bottom-color: #FF9100;
 }
 .card {
   border: none;
   border-radius: 10px;
-  padding-bottom: 20px !important;
+  padding-bottom: 25px !important;
   filter: drop-shadow(0px 0px 15px #E1E1E3);
   font-size: 14px;
 }
@@ -91,13 +103,52 @@ h6 {
   z-index: 1;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
   bottom: -25px;
   right: 15px;
-}
-.card .cart-btn-inner {
+  height: 50px;
+  min-width: 160px;
+  color: #fff;
+  border: 3px solid #fff;
   filter: drop-shadow(0px 0px 2px rgba(255, 74, 139, 0.7));
   background-color: #FF9100;
+}
+.card .cart-btn input {
+  width: 30px;
+  text-align: center;
+  color: #fff;
+}
+.card .cart-btn-inner {
+  color: #fff;
+  background-color: transparent;
+}
+.card .quantity-block {
+  margin-top: -44px;
+  transition: 0.3s ease 0.2s;
+}
+.card .quantity-block button {
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+.ask-section a {
+  color: #fff;
+  background-color: #FF9100;
+}
+.instagram-grid div {
+  margin-bottom: 10px;
+  max-width: 200px;
+  width: 200px;
+  height: 200px;
+  max-height: 200px;
 }
 .promotions-section {
   font-size: 14px;
@@ -152,11 +203,15 @@ footer address {
 }
 @media (min-width: 1464px) {
   .container {
-    max-width: 1440px;
+    max-width: 1460px;
   }
 }
 a {
+  color: currentColor;
   text-decoration: none;
+}
+a:hover {
+  color: #FF9100;
 }
 .stretched-link::after {
   z-index: 0;
