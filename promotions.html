@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции</title>
+    <!-- OpenSans font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- WorkSans font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="bg-white fs-6">
+        <div class="container p-3">
+            <div class="row align-items-center justify-content-between">
+                <!-- лого -->
+                <div class="col-1 col-lg-2 py-3 d-flex">
+                    <img class="flex-shrink-1" src="img/images/logo.png" alt="">
+                </div>
+                <!-- меню -->
+                <nav class="col-lg-4 py-2 text-nowrap">
+                    <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-around align-items-center mb-0">
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="sales.html">Акции</a></li>
+                        <li><a href="payment.html">Доставка и оплата</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <!-- адрес и телефон -->
+                <div class="col-3 d-flex">
+                    <!-- адрес -->
+                    <div class="me-3 d-flex align-items-start text-nowrap">
+                        <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#303030"/>
+                    </svg>
+                        <div class="ms-2">
+                            <div><a href="" class="fw-bold">Казань</a></div>
+                            <div><small>Ново-Савинский</small></div>
+                        </div>
+                    </div>
+                    <!-- телефон -->
+                    <div class="d-flex align-items-start text-nowrap">
+                        <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" fill="#303030"/>
+                        </svg>
+                        <div class="ms-2">
+                            <div><a href="" class="fw-bold">+7 (843) 250-40-20</a></div>
+                            <div><small>с 9:00 до 1:00</small></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- избранное и корзина -->
+                <div class="col-2 d-flex justify-content-end">
+                    <!-- избранное -->
+                    <div class="me-3 position-relative flex-shrink-1">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="24" fill="#FF9100"/>
+                        <path d="M24 33.35L22.55 32.03C17.4 27.36 14 24.28 14 20.5C14 17.42 16.42 15 19.5 15C21.24 15 22.91 15.81 24 17.09C25.09 15.81 26.76 15 28.5 15C31.58 15 34 17.42 34 20.5C34 24.28 30.6 27.36 25.45 32.04L24 33.35Z" fill="white"/>
+                    </svg>
+                        <a class="stretched-link" href="wishes.html"></a>
+                    </div>
+                    <!-- корзина -->
+                    <div class="d-flex">
+                        <svg class="flex-shrink-0" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="24" fill="#FF9100"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C11.4492 14 11 14.4492 11 15C11 15.5508 11.4492 16 12 16H14.2188L16.8438 26.5C17.0664 27.3906 17.8633 28 18.7812 28H20C18.3555 28 17 29.3555 17 31C17 32.6445 18.3555 34 20 34C21.6445 34 23 32.6445 23 31C23 29.3555 21.6445 28 20 28H29C27.3555 28 26 29.3555 26 31C26 32.6445 27.3555 34 29 34C30.6445 34 32 32.6445 32 31C32 29.3555 30.6445 28 29 28H30.25C31.1523 28 31.918 27.4023 32.1562 26.5312L34.75 17H18L18.5 19H32.1562L30.25 26H18.7812L16.1562 15.5C15.9336 14.6094 15.1367 14 14.2188 14H12ZM20 30C20.5625 30 21 30.4375 21 31C21 31.5625 20.5625 32 20 32C19.4375 32 19 31.5625 19 31C19 30.4375 19.4375 30 20 30ZM30 31C30 30.4375 29.5625 30 29 30C28.4375 30 28 30.4375 28 31C28 31.5625 28.4375 32 29 32C29.5625 32 30 31.5625 30 31Z" fill="white"/>
+                    </svg>
+                        <div class="ms-2 text-end">
+                            <div class="fw-bold">
+                                <span>0</span><span> ₽</span>
+                            </div>
+                            <div><small>
+                            <span>0</span><span> товаров</span>
+                        </small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container my-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Все акции</li>
+                </ol>
+            </nav>
+        </section>
+
+        <section class="promotions-page mb-5">
+            <div class="container">
+
+                <h1>Спецпредложения и акции</h1>
+                <div class="row row-cols-md-2 row-cols-xl-3 g-3 g-xl-4">
+                    <div>
+                        <div class="promotion-card bg-white position-relative overflow-hidden d-flex flex-column">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute" src="img/images/promotion.jpg" alt="">
+                            </div>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Именинникам скидка -20%</h6>
+                                <p>Именинникам дарим скидку -20% на все роллы и пиццу. Скидка не действует на сеты, десерты, снеки. Акции и скидки не суммируются. Для получения подарка нужно предъявить паспорт курьеру. Акция действует 3 дня до и 3 дня после ДР.
+                                    Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="promotion-card bg-white position-relative overflow-hidden d-flex flex-column">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute" src="img/images/promotion2.jpg" alt="">
+                            </div>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Новым клиентам дарим любой ролл или пиццу на выбор</h6>
+                                <p>К первому заказу дарим пиццу 25 см или любой ролл на выбор клиента, не превышающую по цене 329 ₽. Минимальная сумма заказа 1 000 ₽. Акции и скидки не суммируются. Необходимо сообщить оператору что вы новый клиент. Пиццу
+                                    или ролл к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="promotion-card bg-white position-relative overflow-hidden d-flex flex-column">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute" src="img/images/promotion3.jpg" alt="">
+                            </div>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Любая пицца в подарок при заказе от 1 200 ₽</h6>
+                                <p>При заказе на сумму от 1 200 ₽ дарим любую пиццу диаметром 25 см на выбор клиента. Акция не действует при заказе сетов. Акции и скидки не суммируются. Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется
+                                    с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="promotion-card bg-white position-relative overflow-hidden d-flex flex-column">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute" src="img/images/promotion3.jpg" alt="">
+                            </div>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Любая пицца в подарок при заказе от 1 200 ₽</h6>
+                                <p>При заказе на сумму от 1 200 ₽ дарим любую пиццу диаметром 25 см на выбор клиента. Акция не действует при заказе сетов. Акции и скидки не суммируются. Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется
+                                    с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-lg-2 py-3">
+                    <img src="img/images/logo.png" alt="Суши Бомба">
+                    <div>@sushibomba 2021</div>
+                </div>
+
+                <nav class="col-lg-5 py-2">
+                    <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-between">
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="sales.html">Акции</a></li>
+                        <li><a href="payment.html">Доставка и оплата</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="col-lg-3 py-3">
+                    <a href="privacy-policy.html">Политика конфиденциальности</a>
+                    <address class="m-0"><a class="d-flex align-items-center mt-3 text-uppercase" href="asmpromo.ru" target="_blank"> Создание и продвижение сайтов <img src="img/images/asm-promo.png" alt=""></a></address>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

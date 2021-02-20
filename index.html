@@ -18,27 +18,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="">
 
     <header class="bg-white fs-6">
-        <div class="container p-3">
-            <div class="row align-items-center justify-content-between">
+        <div class="container py-3">
+            <div class="d-flex flex-nowrap align-items-center justify-content-between">
                 <!-- лого -->
-                <div class="col-1 col-lg-2 py-3 d-flex">
-                    <img class="flex-shrink-1" src="img/images/logo.png" alt="">
-                </div>
+                <a href="index.html" class="logo py-3">
+                    <img class="w-100" src="img/images/logo.png" alt="">
+                </a>
                 <!-- меню -->
-                <nav class="col-lg-4 py-2 text-nowrap">
+                <nav class=" py-2 text-nowrap">
                     <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-around align-items-center mb-0">
                         <li><a href="menu.html">Меню</a></li>
-                        <li><a href="sales.html">Акции</a></li>
+                        <li><a href="promotions.html">Акции</a></li>
                         <li><a href="payment.html">Доставка и оплата</a></li>
                         <li><a href="comments.html">Отзывы</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <!-- адрес и телефон -->
-                <div class="col-3 d-flex">
+                <div class=" d-flex">
                     <!-- адрес -->
                     <div class="me-3 d-flex align-items-start text-nowrap">
                         <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,13 +55,13 @@
                         <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" fill="#303030"/>
                         </svg>
                         <div class="ms-2">
-                            <div><a href="" class="fw-bold">+7 (843) 250-40-20</a></div>
+                            <div><a href="tel:+7(843)222-02-22" class="fw-bold">+7 (843) 250-40-20</a></div>
                             <div><small>с 9:00 до 1:00</small></div>
                         </div>
                     </div>
                 </div>
                 <!-- избранное и корзина -->
-                <div class="col-2 d-flex justify-content-end">
+                <div class=" d-flex justify-content-end">
                     <!-- избранное -->
                     <div class="me-3 position-relative flex-shrink-1">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,10 +92,45 @@
 
     <main>
 
-        <section class="banner-section">
+        <section class="banner-section mt-4 pt-2">
             <div class="container">
                 <h2 class="visually-hidden">Слайдер с акциями</h2>
+
+                <div class="swiper-banner swiper-container overflow-visible">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide position-relative img-wrapper">
+                            <img src="img/images/banner.jpg" alt="">
+                            <a href="promotion.html" class="stretched-link"></a>
+                        </div>
+                        <div class="swiper-slide position-relative img-wrapper">
+                            <img src="img/images/bannr.jpg" alt="">
+                            <a href="promotion.html" class="stretched-link"></a>
+                        </div>
+                        <div class="swiper-slide position-relative img-wrapper">
+                            <img src="img/images/banner.jpg" alt="">
+                            <a href="promotion.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next top-50 start-100 translate-middle w-auto h-auto">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.6">
+                            <rect width="48" height="48" rx="24" fill="#858585"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4238 12L30.319 22.7947L31 23.5L30.319 24.2053L19.4238 35L18 33.5893L28.1833 23.5L18 13.4107L19.4238 12Z" fill="white"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev top-50 start-0 translate-middle w-auto h-auto">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.6">
+                            <rect width="48" height="48" rx="24" fill="#858585"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.5762 12L17.681 22.7947L17 23.5L17.681 24.2053L28.5762 35L30 33.5893L19.8167 23.5L30 13.4107L28.5762 12Z" fill="white"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
             </div>
+
         </section>
 
         <section class="advantages py-5">
@@ -164,9 +199,8 @@
                         <h2 class="mb-3">Категории блюд</h2>
                     </div>
                 </div>
-
-                <nav class="mb-5">
-                    <div class="nav nav-tabs border-bottom d-inline-flex" id="nav-tab" role="tablist">
+                <nav class="mb-4 mb-lg-5 w-100">
+                    <div class="nav nav-tabs border-bottom d-flex d-md-inline-flex flex-nowrap text-nowrap" id="nav-tab" role="tablist">
                         <!-- popular -->
                         <button class="nav-link active" id="nav-popular-tab" data-bs-toggle="tab" data-bs-target="#nav-popular" type="button" role="tab" aria-controls="nav-popular" aria-selected="true">Популярное</button>
                         <!-- rolls -->
@@ -186,11 +220,11 @@
                     <!-- popular -->
                     <div class="tab-pane fade show active" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
 
-                        <div class="row row-cols-auto row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
-                            <div class="mb-5">
+                        <div class="row row-cols-auto row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-5">
+                            <div class="">
                                 <div class="card rounded-4 p-3 bg-white h-100">
                                     <div class="position-relative rounded-2 overflow-hidden mb-3 img-wrapper">
-                                        <img class="position-absolute" src="img/images/promotion.jpg" alt="">
+                                        <img class="position-absolute" src="img/images/product.jpg" alt="">
                                     </div>
                                     <div class="sale position-absolute rounded-2 py-2 px-3 lh-1 color-white">10%</div>
                                     <button data-bs-toggle="button" class="whish bg-white rounded-circle position-absolute border-0">
@@ -209,24 +243,40 @@
                                         </div>
                                     </div>
                                     <div class="weight mt-auto">1500 г</div>
-                                    <div class="cart-btn position-absolute rounded-pill p-0 overflow-hidden">
-                                        <div class="quantity-block h-100 w-100 d-flex justify-content-between align-items-center">
-                                            <button class="ms-1 rounded-circle bg-white border-0">-</button>
-                                            <input class="bg-transparent border-0 h-100" type="number" value="1">
-                                            <button class="me-1 rounded-circle bg-white border-0">+</button>
-                                        </div>
-                                        <button onclick="$(this).prev('.quantity-block').css('margin-top', '0px');" class="cart-btn-inner w-100 h-100 border-0 rounded-pill ps-3 pe-0 bg-">
+                                    <div class="cart-btn-wrapper position-absolute rounded-pill bg-white overflow-hidden">
+                                        <div class="cart-btn rounded-pill p-0 overflow-hidden">
+                                            <div class="quantity-block h-100 w-100 d-flex justify-content-between align-items-center">
+
+                                                <button class="count-btn rounded-circle bg-white">
+                                                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 2H0V0H14V2Z" fill="#333333"/>
+                                                </svg>
+                                                    
+                                            </button>
+
+                                                <input class="bg-transparent border-0 h-100 flex-grow-1" type="number" value="1">
+
+                                                <button class="count-btn rounded-circle bg-white">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#333333"/>
+                                                </svg>
+                                                    
+                                            </button>
+                                            </div>
+                                            <button onclick="$(this).prev('.quantity-block').css('margin-top', '0px');" class="cart-btn-inner w-100 h-100 border-0 rounded-pill ps-3 pe-0 p-0 d-flex align-items-center justify-content-between">
                                             <span class="pe-2">В корзину</span>
                                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" stroke="#FF9100"/>
                                                 <path d="M27.2 27.2C27.2 28.199 26.399 29 25.4 29C24.9226 29 24.4648 28.8104 24.1272 28.4728C23.7896 28.1352 23.6 27.6774 23.6 27.2C23.6 26.201 24.401 25.4 25.4 25.4C25.8774 25.4 26.3352 25.5896 26.6728 25.9272C27.0104 26.2648 27.2 26.7226 27.2 27.2ZM16.4 25.4C15.401 25.4 14.6 26.201 14.6 27.2C14.6 27.6774 14.7896 28.1352 15.1272 28.4728C15.4648 28.8104 15.9226 29 16.4 29C17.399 29 18.2 28.199 18.2 27.2C18.2 26.201 17.399 25.4 16.4 25.4ZM16.58 22.367L16.553 22.475C16.553 22.601 16.652 22.7 16.778 22.7H27.2V24.5H16.4C15.9226 24.5 15.4648 24.3104 15.1272 23.9728C14.7896 23.6352 14.6 23.1774 14.6 22.7C14.6 22.385 14.681 22.088 14.816 21.836L16.04 19.631L12.8 12.8H11V11H13.943L14.789 12.8H28.1C28.595 12.8 29 13.205 29 13.7C29 13.853 28.955 14.006 28.892 14.15L25.67 19.973C25.364 20.522 24.77 20.9 24.095 20.9H17.39L16.58 22.367ZM17.75 19.1H19.1V17.3H16.904L17.75 19.1ZM20 17.3V19.1H22.7V17.3H20ZM22.7 16.4V14.6H20V16.4H22.7ZM25.499 17.3H23.6V19.1H24.5L25.499 17.3ZM27.002 14.6H23.6V16.4H26.003L27.002 14.6ZM15.626 14.6L16.472 16.4H19.1V14.6H15.626Z" fill="#FF9100"/>
-                                            </svg>
+                                                </svg>
+                                                
                                         </button>
+                                        </div>
                                     </div>
-                                    <a href="" class="stretched-link"></a>
+                                    <a href="card.html" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="mb-5">
+                            <div class="">
                                 <div class="card rounded-4 p-3 bg-white h-100">
                                     <div class="rounded-2 overflow-hidden mb-3 position-relative img-wrapper">
                                         <img class="position-absolute" src="img/images/product2.jpg" alt="">
@@ -262,7 +312,7 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    <a href="" class="stretched-link"></a>
+                                    <a href="card.html" class="stretched-link"></a>
                                 </div>
                             </div>
                         </div>
@@ -287,28 +337,11 @@
             </div>
         </section>
 
-        <section class="media-section py-5 text-center">
+        <section class="d-none media-section py-5 text-center">
             <div class="container">
                 <div class="row">
                     <h2 class="mb-1">Мы в социальных сетях</h2>
                     <p class="mb-5 mx-auto col-lg-7">Присоединяйтесь к нам социальных сетях, выкладывайте фото, участвуйте в розыгрышах призов, пишите комментарии и мы ответим вам!</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>Наш Instagram: @ник</p>
-                        <div class="row row-cols-lg-3 instagram-grid">
-                            <div><img src="img/images/promotion.jpg" alt="" class="h-100 w-100"></div>
-                            <div><img src="" alt="" class="h-100 w-100"></div>
-                            <div><img src="" alt="" class="h-100 w-100"></div>
-                            <div><img src="" alt="" class="h-100 w-100"></div>
-                            <div><img src="" alt="" class="h-100 w-100"></div>
-                            <div><img src="" alt="" class="h-100 w-100"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <p>Мы во ВКонтакте: @ник</p>
-                        <div class="bg-secondary">1</div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -331,85 +364,92 @@
         <section class="promotions-section py-5">
             <div class="container">
                 <div class="row">
+
                     <div class="col-12">
-                        <h2 class="text-center">Акции и спецпредложения</h2>
-                    </div>
-                    <div class="col-12">
-                        <div class="swiper-comments swiper-container">
+
+                        <div class="swiper-container promotions-swiper">
+                            <h2 class="text-center">Спецпредложения и акции</h2>
+
                             <div class="swiper-wrapper mt-5">
-                                <div class="swiper-slide position-relative">
-                                    <div class="rounded-3 overflow-hidden">
-                                        <img src="img/images/promotion.jpg" alt="">
+                                <div class="promotion-card swiper-slide position-relative overflow-hidden d-flex flex-column">
+                                    <div class="img-wrapper overflow-hidden position-relative">
+                                        <img class="position-absolute" src="img/images/promotion.jpg" alt="">
                                     </div>
-                                    <div class="p-3">
+                                    <div class="px-3 py-4 d-flex flex-column flex-grow-1">
                                         <h6>Именинникам скидка -20%</h6>
                                         <p>Именинникам дарим скидку -20% на все роллы и пиццу. Скидка не действует на сеты, десерты, снеки. Акции и скидки не суммируются. Для получения подарка нужно предъявить паспорт курьеру. Акция действует 3 дня до и 3 дня после ДР.
                                             Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
-                                        <a href="promotion.html" class="d-inline-block stretched-link">Подробнее
+                                        <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
                                             <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
                                             </svg> 
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide position-relative">
-                                    <div class="rounded-3 overflow-hidden">
-                                        <img src="img/images/promotion.jpg" alt="">
+
+                                <div class="promotion-card swiper-slide position-relative overflow-hidden d-flex flex-column">
+                                    <div class="img-wrapper overflow-hidden position-relative">
+                                        <img class="position-absolute" src="img/images/promotion2.jpg" alt="">
                                     </div>
-                                    <div class="p-3">
+                                    <div class="px-3 py-4 d-flex flex-column flex-grow-1">
                                         <h6>Новым клиентам дарим любой ролл или пиццу на выбор</h6>
                                         <p>К первому заказу дарим пиццу 25 см или любой ролл на выбор клиента, не превышающую по цене 329 ₽. Минимальная сумма заказа 1 000 ₽. Акции и скидки не суммируются. Необходимо сообщить оператору что вы новый клиент.
-                                            Пиццу или ролл к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа..</p>
-                                        <a href="promotion.html" class="d-inline-block stretched-link">Подробнее
+                                            Пиццу или ролл к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
+                                        <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
                                             <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
                                             </svg> 
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide position-relative">
-                                    <div class="rounded-3 overflow-hidden">
-                                        <img src="img/images/promotion.jpg" alt="">
+
+                                <div class="promotion-card swiper-slide position-relative overflow-hidden d-flex flex-column">
+                                    <div class="img-wrapper overflow-hidden position-relative">
+                                        <img class="position-absolute" src="img/images/promotion3.jpg" alt="">
                                     </div>
-                                    <div class="p-3">
+                                    <div class="px-3 py-4 d-flex flex-column flex-grow-1">
                                         <h6>Любая пицца в подарок при заказе от 1 200 ₽</h6>
                                         <p>При заказе на сумму от 1 200 ₽ дарим любую пиццу диаметром 25 см на выбор клиента. Акция не действует при заказе сетов. Акции и скидки не суммируются. Скидки и подарки к вашему заказу добавляет оператор. Оператор
                                             свяжется с вами в течении 10 мин. после вашего заказа.</p>
-                                        <a href="promotion.html" class="d-inline-block stretched-link">Подробнее
+                                        <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
                                             <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
                                             </svg> 
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide position-relative">
-                                    <div class="rounded-3 overflow-hidden">
-                                        <img src="img/images/promotion.jpg" alt="">
+
+                                <div class="promotion-card swiper-slide position-relative overflow-hidden d-flex flex-column">
+                                    <div class="img-wrapper overflow-hidden position-relative">
+                                        <img class="position-absolute" src="img/images/promotion.jpg" alt="">
                                     </div>
-                                    <div class="p-3">
+                                    <div class="px-3 py-4 d-flex flex-column flex-grow-1">
                                         <h6>Именинникам скидка -20%</h6>
                                         <p>Именинникам дарим скидку -20% на все роллы и пиццу. Скидка не действует на сеты, десерты, снеки. Акции и скидки не суммируются. Для получения подарка нужно предъявить паспорт курьеру. Акция действует 3 дня до и 3 дня после ДР.
                                             Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
-                                        <a href="promotion.html" class="d-inline-block stretched-link">Подробнее
+                                        <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
                                             <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
                                             </svg> 
                                         </a>
                                     </div>
                                 </div>
+
                             </div>
                             <!-- Add Arrows -->
-                            <div class="swiper-button-next top-0 m-0 w-auto h-auto pt-1">
+                            <div class="swiper-button-next m-0 w-auto h-auto pt-1">
                                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="19" cy="19" r="19" fill="#F08601"/>
+                                    <circle cx="19" cy="19" r="18.5" fill="#F08601" stroke="#F08601"/>
                                     <path d="M15 25.12L20.5628 19L15 12.88L16.7126 11L24 19L16.7126 27L15 25.12Z" fill="white"/>
                                 </svg>
+
                             </div>
-                            <div class="swiper-button-prev top-0 m-0 w-auto h-auto pt-1">
+                            <div class="swiper-button-prev m-0 w-auto h-auto pt-1">
                                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="19" cy="19" r="18.5" stroke="#F08601"/>
-                                    <path d="M23 25.12L17.4372 19L23 12.88L21.2874 11L14 19L21.2874 27L23 25.12Z" fill="#F08601"/>
+                                    <circle cx="19" cy="19" r="18.5" fill="#F08601" stroke="#F08601"/>
+                                    <path d="M23 25.12L17.4372 19L23 12.88L21.2874 11L14 19L21.2874 27L23 25.12Z" fill="white"/>
                                 </svg>
+
                             </div>
                         </div>
                     </div>
@@ -489,23 +529,25 @@
             </div>
         </section>
 
-        <section class="contacts-section py-5">
+        <section class="contacts-section py-5 mb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-5">
                         <h2>Контакты</h2>
-                        <h6>Телефон:</h6>
-                        <p>+7 (843) 222-02-22</p>
-                        <h6>Время работы:</h6>
-                        <p>Ежедневно с 10:00 до 23:00</p>
-                        <h6>Адрес:</h6>
-                        <p>г. Казань, ул. Профсоюзная</p>
-                        <h6>Вопросы и предложения:</h6>
-                        <p>mail@yandex.ru</p>
+                        <h6 class="mb-2">Телефон:</h6>
+                        <p class="mb-1"><a href="tel:+7(843)222-02-22">+7 (843) 222-02-22</a></p>
+                        <p class="mb-4"><a href="tel:+7(843)222-02-22">+7 (843) 222-02-22</a></p>
+                        <h6 class="mb-2">Время работы:</h6>
+                        <p class="mb-1">Ежедневно с 10:00 до 23:00</p>
+                        <p class="mb-4">Заказы на доставку принимаются ежедневно с 10:00 до 23:00</p>
+                        <h6 class="mb-2">Адрес:</h6>
+                        <p class="mb-4">г. Казань, ул. Профсоюзная</p>
+                        <h6 class="mb-2">Вопросы и предложения:</h6>
+                        <p><a href="mailto:mail@yandex.ru">mail@yandex.ru</a></p>
                     </div>
-                    <div class="col-lg-8">
+                    <!-- <div class="col-lg-7 map">
                         <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9fb482a74d255d722e01314f6d53db11f7420412c89abe56a2f0db0b337ef36e&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -519,14 +561,14 @@
             <div class="row align-items-center justify-content-between">
 
                 <div class="col-lg-2 py-3">
-                    <img src="img/images/logo.png" alt="Суши Бомба">
+                    <img class="logo" src="img/images/logo.png" alt="Суши Бомба">
                     <div>@sushibomba 2021</div>
                 </div>
 
                 <nav class="col-lg-5 py-2">
                     <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-between">
                         <li><a href="menu.html">Меню</a></li>
-                        <li><a href="sales.html">Акции</a></li>
+                        <li><a href="promotions.html">Акции</a></li>
                         <li><a href="payment.html">Доставка и оплата</a></li>
                         <li><a href="comments.html">Отзывы</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
