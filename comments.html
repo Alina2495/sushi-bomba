@@ -106,9 +106,7 @@
 
                 <div class="row">
                     <h1>Отзывы наших клиентов</h1>
-                    <button name="review-modal" type="button" class="bg-transparent border-0 top-0 end-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        Оставить отзыв
-                      </button>
+                    <button name="review-modal" type="button" class="bg-transparent border-0 top-0 end-0" data-bs-toggle="modal" data-bs-target="#AddCommentModal">Оставить отзыв</button>
                 </div>
 
 
@@ -216,7 +214,38 @@
 
     </footer>
 
-
+    <!-- Add Comment Modal -->
+    <div class="modal fade" id="AddCommentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AddCommentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <form class="modal-content p-sm-4 px-xl-5 border-0 needs-validation" novalidate>
+                <div class="modal-header border-0">
+                    <h3 class="modal-title" id="AddCommentModalLabel">Оставить отзыв</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset class="mb-3">
+                        <label class="form-label" for="commentAuthorName">Имя</label>
+                        <input class="form-control py-3" type="text" id="commentAuthorName" placeholder="Имя" required>
+                        <div class="invalid-feedback">Заполните это поле</div>
+                    </fieldset>
+                    <fieldset class="mb-3">
+                        <label class="form-label" for="commentAuthorEmail">Электронная почта</label>
+                        <input class="form-control py-3" type="email" id="commentAuthorEmail" placeholder="Электронная почта" required>
+                        <div class="invalid-feedback">Заполните это поле</div>
+                    </fieldset>
+                    <fieldset>
+                        <label class="form-label" for="commentAuthorText">Ваш отзыв</label>
+                        <textarea class="form-control py-3" id="commentAuthorText" rows="7" placeholder="Напишите ваш отзыв" required></textarea>
+                        <div class="invalid-feedback">Заполните это поле</div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer border-0 justify-content-start justify-content-lg-start">
+                    <button type="submit" class="btn color-white bg-orange rounded-pill py-3 px-5 lh-1">Отправить</button>
+                    <button type="reset" class="btn bg-gray rounded-pill py-3 px-5 lh-1" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

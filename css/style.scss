@@ -16,7 +16,7 @@ body {
 
 body {
     background-color: #FDFDFD;
-    color: #000;
+    color: $black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -155,7 +155,6 @@ header {
     .btn-group {
         z-index: 1;
         font-size: 0;
-        display: block;
         .btn-check:checked+.btn {
             color: $black3;
             background-color: $white;
@@ -649,6 +648,9 @@ a {
             }
         }
     }
+    .modal .btn {
+        flex-basis: 100%;
+    }
 }
 
 @media (min-width: 1464px) {
@@ -662,9 +664,92 @@ svg {
     line-height: 1px;
 }
 
-button {
-    border: none;
+button // .btn
+{
+    white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $white;
+}
+
+.modal {
+    &-dialog {
+        max-width: 660px;
+    }
+}
+
+.modal,
+.form-label,
+.form-control {
+    font-size: 14px;
+}
+
+.form-control {
+    line-height: 16px;
+}
+
+.red {
+    color: #C94D3F;
+}
+
+.required {
+    &::after {
+        content: '*';
+        color: #C94D3F;
+    }
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    &:checked {
+        background-color: $white;
+        border-color: #C4C4C4;
+    }
+}
+
+.form-check-input[type='radio'] {
+    background-image: url(../img/icons/radio.svg);
+}
+
+.form-check-input:checked[type='radio'] {
+    background-image: url(../img/icons/radio-checked.svg);
+}
+
+.form-check-label {
+    padding-top: 3px;
+    padding-left: 10px;
+    &+p,
+    &+.invalid-feedback {
+        padding-left: 10px;
+    }
+}
+
+.form-check-input[type="checkbox"] {
+    background-image: none;
+}
+
+.form-check-input:checked[type='checkbox'] {
+    background-image: url(../img/icons/checkbox-checked.svg);
+}
+
+small {
+    font-size: 12px;
+    color: $gray;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+.form-check-label {
+    z-index: 2;
+    a {
+        z-index: 1;
+    }
 }

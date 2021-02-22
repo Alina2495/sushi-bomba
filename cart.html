@@ -92,7 +92,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="mb-5">
 
         <section class="container my-4">
             <nav aria-label="breadcrumb">
@@ -105,9 +105,9 @@
 
         <section class="cart-page">
             <div class="container">
-                <div class="row">
+                <form class="row needs-validation" novalidate>
                     <h1 class="col-12">Корзина</h1>
-                    <div class="cart-list col-12">
+                    <div class="cart-list col-12 mb-5">
                         <div class="cart-list-heading row py-3 d-none d-lg-flex">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-3">Наименование</div>
@@ -172,7 +172,108 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="cart-form mt-lg-4">
+                        <div class="row flex-lg-nowrap border-bottom mb-5">
+                            <h6 class="col-lg-auto">Заполните данные для оформления заказа</h6>
+                            <p class="col-lg-auto"><small>(<span class="red">*</span> - поля обязательные для заполнения)</small></p>
+                        </div>
+
+                        <div class="row border-bottom mb-5">
+                            <div class="form col-lg-5 pb-4">
+                                <fieldset class="mb-4">
+                                    <label class="form-label required" for="orderUserName">Имя</label>
+                                    <input class="form-control py-3" type="text" id="orderUserName" placeholder="Имя" required>
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                                <fieldset class="mb-4">
+                                    <label class="form-label required" for="orderUserSurname">Фамилия</label>
+                                    <input class="form-control py-3" type="text" id="orderUserSurname" placeholder="Фамилия" required>
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                                <fieldset class="mb-4">
+                                    <label class="form-label required" for="orderUserTel">Номер телефона</label>
+                                    <input class="form-control py-3" type="tel" id="orderUserTel" placeholder="Номер телефона" required>
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                                <fieldset class="mb-4">
+                                    <label class="form-label required" for="orderUserEmail">Электронная почта</label>
+                                    <input class="form-control py-3" type="email" id="orderUserEmail" placeholder="Электронная почта" required>
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                                <fieldset class="mb-4">
+                                    <label class="form-label required" for="orderUserCity">Город</label>
+                                    <input class="form-control py-3" type="text" id="orderUserCity" placeholder="Город" required>
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                                <fieldset>
+                                    <label class="form-label" for="commentAuthorText">Комментарий</label>
+                                    <textarea class="form-control py-3" id="commentAuthorText" rows="5" placeholder="Комментарий к заказу (по желанию)"></textarea>
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-5 px-lg-5">
+                                <!-- delivery type -->
+                                <div class="mb-5">
+                                    <div class="required mb-2">Способ доставки</div>
+                                    <div class="border rounded-3 px-3 py-4 bg-white">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="deliveryType1" name="delivery-type" required>
+                                            <label class="form-check-label" for="deliveryType1">Самовывоз</label>
+                                            <p><small>(адреса магазинов в разделе <a href="contacts.html">Контакты</a>)</small></p>
+                                        </div>
+                                        <div class="form-check border-top pt-3">
+                                            <input type="radio" class="form-check-input" id="deliveryType2" name="delivery-type" required>
+                                            <label class="form-check-label" for="deliveryType2">Курьерская доставка</label>
+                                            <div class="invalid-feedback">Выберите способ доставки</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- payment type -->
+                                <div class="mb-5">
+                                    <div class="required mb-2">Способ оплаты</div>
+                                    <div class="border rounded-3 px-3 py-4 bg-white">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="paymentType1" name="payment-type" required>
+                                            <label class="form-check-label" for="paymentType1">Наличный расчёт</label>
+                                            <p><small>(Действует только на самовывоз)</small></p>
+                                        </div>
+                                        <div class="form-check border-top pt-3">
+                                            <input type="radio" class="form-check-input" id="paymentType2" name="payment-type" required>
+                                            <label class="form-check-label" for="paymentType2">Оплата картой</label>
+                                            <div class="invalid-feedback">Выберите способ оплаты</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="row col-lg-6">
+                            <h6 class="col-2">Итого:</h6>
+                            <div>
+                                <div class="d-flex flex-nowrap justify-content-between align-items-start">
+                                    <div>Стоимость:</div>
+                                    <div>938<span> руб.</span></div>
+                                </div>
+                                <div class="d-flex flex-nowrap justify-content-between align-items-start">
+                                    <div>Доставка:</div>
+                                    <div>Бесплатно</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn bg-orange py-3 px-5 lh-1 my-4">Оформить заказ</button>
+
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input flex-shrink-0 mt-0" id="validationFormCheck1" required>
+                            <label class="form-check-label text-muted d-inline" for="validationFormCheck1">Я согласен на </label><a href="" class="text-decoration-underline link-dark">обработку персональных данных</a>
+                            <div class="invalid-feedback">Примите условия использования</div>
+                        </div>
+                    </div>
+
+                </form>
             </div>
         </section>
 
