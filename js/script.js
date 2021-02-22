@@ -82,7 +82,7 @@ var swiper = new Swiper('.swiper-comments', {
         },
         // when window width is >= 640px
         640: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 30
         }
     },
