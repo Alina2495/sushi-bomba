@@ -12,19 +12,13 @@ var swiper = new Swiper('.swiper-banner', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        // when window width is >= 320px
         320: {
-            slidesPerView: 1,
-            spaceBetween: 0
+            spaceBetween: 10
         },
-        // when window width is >= 480px
         480: {
-            slidesPerView: 1,
             spaceBetween: 20
         },
-        // when window width is >= 640px
         640: {
-            slidesPerView: 1,
             spaceBetween: 30
         }
     },
@@ -32,7 +26,7 @@ var swiper = new Swiper('.swiper-banner', {
 
 var swiper = new Swiper('.promotions-swiper', {
     slidesPerView: 1,
-    // speed: 400,
+    speed: 300,
     spaceBetween: 30,
     navigation: {
         nextEl: '.swiper-button-next',
@@ -42,15 +36,11 @@ var swiper = new Swiper('.promotions-swiper', {
         576: {
             slidesPerView: 1
         },
-        768: {
+        700: {
             slidesPerView: 2,
-            spaceBetween: 20
+            spaceBetween: 15
         },
         992: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        },
-        1200: {
             slidesPerView: 3,
             spaceBetween: 30
         }
@@ -59,7 +49,7 @@ var swiper = new Swiper('.promotions-swiper', {
 
 var swiper = new Swiper('.swiper-comments', {
     slidesPerView: 1,
-    speed: 400,
+    speed: 300,
     spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',
@@ -70,32 +60,27 @@ var swiper = new Swiper('.swiper-comments', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        // when window width is >= 320px
         320: {
             slidesPerView: 1,
             spaceBetween: 0
         },
-        // when window width is >= 480px
         480: {
             slidesPerView: 2,
             spaceBetween: 20
         },
-        // when window width is >= 640px
-        640: {
+        768: {
             slidesPerView: 3,
             spaceBetween: 30
         }
     },
 });
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// forms validation
 (function() {
     'use strict'
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
 
-    // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
         .forEach(function(form) {
             form.addEventListener('submit', function(event) {

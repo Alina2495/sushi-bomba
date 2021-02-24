@@ -103,7 +103,6 @@ header {
 
 .card {
     border-radius: 10px;
-    font-size: 14px;
     border: none;
     .img-wrapper {
         border-radius: 8px;
@@ -149,20 +148,21 @@ header {
         font-size: 18px;
         color: $orange;
     }
-    .btn-group {
-        z-index: 1;
-        font-size: 0;
-        .btn-check:checked+.btn {
-            color: $black3;
-            background-color: $white;
-            box-shadow: none;
-        }
-        .btn {
-            font-size: 14px;
-            color: $gray;
-            background-color: #E9ECEF;
-            border: 1px solid #CED4DA;
-        }
+}
+
+.btn-group {
+    z-index: 1;
+    font-size: 0;
+    .btn-check:checked+.btn {
+        color: $black3;
+        background-color: $white;
+        box-shadow: none;
+    }
+    .btn {
+        font-size: 14px;
+        color: $gray;
+        background-color: #E9ECEF;
+        border: 1px solid #CED4DA;
     }
 }
 
@@ -366,6 +366,7 @@ footer {
 }
 
 .promotion-card {
+    font-size: 14px;
     height: 100%;
     border-radius: 20px;
     .img-wrapper {
@@ -398,28 +399,9 @@ footer {
     }
     ins {
         font-size: 24px;
-        font-weight: 600;
     }
     del {
         color: $gray;
-    }
-    dl,
-    dt,
-    dd {
-        background-color: $gray3;
-        color: inherit;
-        font-size: inherit;
-        font-weight: inherit;
-    }
-    dl {
-        color: $gray;
-        margin-bottom: 1px;
-        &:last-child {
-            color: $black;
-        }
-    }
-    dd {
-        margin: 0;
     }
     .cart-btn {
         width: 200px;
@@ -434,6 +416,27 @@ footer {
         height: 54px;
         width: 54px;
     }
+}
+
+dl,
+dt,
+dd {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+dl {
+    background-color: $gray3;
+    color: $gray;
+    margin-bottom: 1px;
+    &:last-child {
+        color: $black;
+    }
+}
+
+dd {
+    margin: 0;
 }
 
 .cart-page {
@@ -482,19 +485,37 @@ svg {
 button,
 .btn {
     white-space: nowrap;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     color: $white;
 }
 
 .modal {
-    &-dialog {
-        max-width: 660px;
-    }
     &-footer {
         button {
             color: $white;
+        }
+    }
+}
+
+.product-modal {
+    .modal-content {
+        border-radius: 20px;
+    }
+    .btn-close {
+        top: 10px;
+        right: 10px;
+    }
+    dl {
+        background-color: $transparent;
+    }
+    .price {
+        del {
+            font-size: 18px;
+        }
+        ins {
+            font-size: 24px;
         }
     }
 }
@@ -656,13 +677,6 @@ a {
             height: 330px;
         }
     }
-    // .cart-page {
-    //     .cart-list {
-    //         .img-wrapper {
-    //             width: 100%;
-    //         }
-    //     }
-    // }
 }
 
 @media (max-width: 767.98px) {
@@ -693,6 +707,14 @@ a {
 }
 
 @media (max-width: 575.98px) {
+    .navbar-brand {
+        width: 110px;
+    }
+    .wish-icon,
+    .cart-icon {
+        width: 25px;
+        height: 25px;
+    }
     .tab-pane {
         .row {
             padding-bottom: 30px;
@@ -706,6 +728,9 @@ a {
         }
     }
     .promotions-section {
+        .swiper-wrapper {
+            padding-top: 30px;
+        }
         .swiper-button {
             &-prev,
             &-next {
@@ -715,14 +740,14 @@ a {
     }
     .comments-section {
         .swiper-pagination {
-            right: 58px;
+            right: 50px;
             left: unset;
             width: auto;
         }
         .swiper-button {
             &-prev {
                 left: unset;
-                right: 122px;
+                right: 130px;
             }
             &-next {
                 left: unset;
@@ -747,6 +772,18 @@ a {
     }
     .modal .btn {
         flex-basis: 100%;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .product-modal {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .comment-modal {
+        max-width: 600px;
     }
 }
 

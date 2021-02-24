@@ -98,7 +98,6 @@ header .container {
 
 .card {
   border-radius: 10px;
-  font-size: 14px;
   border: none;
 }
 
@@ -148,19 +147,19 @@ header .container {
   color: #FF9100;
 }
 
-.card .btn-group {
+.btn-group {
   z-index: 1;
   font-size: 0;
 }
 
-.card .btn-group .btn-check:checked + .btn {
+.btn-group .btn-check:checked + .btn {
   color: #202020;
   background-color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.card .btn-group .btn {
+.btn-group .btn {
   font-size: 14px;
   color: #8D8D8D;
   background-color: #E9ECEF;
@@ -365,6 +364,7 @@ footer address {
 }
 
 .promotion-card {
+  font-size: 14px;
   height: 100%;
   border-radius: 20px;
 }
@@ -406,33 +406,10 @@ footer address {
 
 .card-page ins {
   font-size: 24px;
-  font-weight: 600;
 }
 
 .card-page del {
   color: #8D8D8D;
-}
-
-.card-page dl,
-.card-page dt,
-.card-page dd {
-  background-color: #F9F9F9;
-  color: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.card-page dl {
-  color: #8D8D8D;
-  margin-bottom: 1px;
-}
-
-.card-page dl:last-child {
-  color: #000;
-}
-
-.card-page dd {
-  margin: 0;
 }
 
 .card-page .cart-btn {
@@ -449,6 +426,28 @@ footer address {
 .card-page .cart-btn-inner svg {
   height: 54px;
   width: 54px;
+}
+
+dl,
+dt,
+dd {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+dl {
+  background-color: #F9F9F9;
+  color: #8D8D8D;
+  margin-bottom: 1px;
+}
+
+dl:last-child {
+  color: #000;
+}
+
+dd {
+  margin: 0;
 }
 
 .cart-page .cart-list {
@@ -499,9 +498,9 @@ svg {
 button,
 .btn {
   white-space: nowrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -511,12 +510,29 @@ button,
   color: #fff;
 }
 
-.modal-dialog {
-  max-width: 660px;
-}
-
 .modal-footer button {
   color: #fff;
+}
+
+.product-modal .modal-content {
+  border-radius: 20px;
+}
+
+.product-modal .btn-close {
+  top: 10px;
+  right: 10px;
+}
+
+.product-modal dl {
+  background-color: transparent;
+}
+
+.product-modal .price del {
+  font-size: 18px;
+}
+
+.product-modal .price ins {
+  font-size: 24px;
 }
 
 .modal,
@@ -684,6 +700,14 @@ a:hover {
 }
 
 @media (max-width: 575.98px) {
+  .navbar-brand {
+    width: 110px;
+  }
+  .wish-icon,
+  .cart-icon {
+    width: 25px;
+    height: 25px;
+  }
   .tab-pane .row {
     padding-bottom: 30px;
     -ms-overflow-style: none;
@@ -694,17 +718,20 @@ a:hover {
   .tab-pane .row > div {
     max-width: 290px;
   }
+  .promotions-section .swiper-wrapper {
+    padding-top: 30px;
+  }
   .promotions-section .swiper-button-prev, .promotions-section .swiper-button-next {
     top: 60px;
   }
   .comments-section .swiper-pagination {
-    right: 58px;
+    right: 50px;
     left: unset;
     width: auto;
   }
   .comments-section .swiper-button-prev {
     left: unset;
-    right: 122px;
+    right: 130px;
   }
   .comments-section .swiper-button-next {
     left: unset;
@@ -722,6 +749,18 @@ a:hover {
   .modal .btn {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .product-modal {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .comment-modal {
+    max-width: 600px;
   }
 }
 
