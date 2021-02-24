@@ -13,8 +13,13 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h1,
@@ -40,7 +45,8 @@ h6 {
 }
 
 header {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -82,10 +88,6 @@ header .container {
   border-bottom-color: #FF9100;
 }
 
-.fs-0 {
-  font-size: 0px;
-}
-
 .badge {
   font-weight: 500;
   background-color: #37C8AB;
@@ -95,8 +97,9 @@ header .container {
 }
 
 .card {
-  font-weight: 600;
   border-radius: 10px;
+  font-size: 14px;
+  border: none;
 }
 
 .card .img-wrapper {
@@ -153,7 +156,8 @@ header .container {
 .card .btn-group .btn-check:checked + .btn {
   color: #202020;
   background-color: #fff;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .card .btn-group .btn {
@@ -184,7 +188,8 @@ del {
   height: 40px;
   min-width: 150px;
   color: #fff;
-  filter: drop-shadow(0px 0px 2px rgba(255, 74, 139, 0.7));
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(255, 74, 139, 0.7));
+          filter: drop-shadow(0px 0px 2px rgba(255, 74, 139, 0.7));
   background-color: #FF9100;
 }
 
@@ -265,7 +270,6 @@ input::-webkit-inner-spin-button {
 }
 
 .comments-section button {
-  color: #FF9100;
   font-weight: 600;
   position: absolute;
 }
@@ -304,19 +308,6 @@ footer a:hover {
 
 footer address {
   font-size: 14px;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #FF9100;
-}
-
-.stretched-link::after {
-  z-index: 0;
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -360,10 +351,10 @@ a:hover {
   -webkit-filter: drop-shadow(0px 0px 15px #E1E1E3);
   filter: drop-shadow(0px 0px 15px #E1E1E3);
   -webkit-transition: top, box-shadow, 0.2s ease;
-  -moz-transition: top, box-shadow, 0.2s ease;
-  -ms-transition: top, box-shadow, 0.2s ease;
-  -o-transition: top, box-shadow, 0.2s ease;
+  -webkit-transition: top, 0.2s ease, -webkit-box-shadow;
+  transition: top, 0.2s ease, -webkit-box-shadow;
   transition: top, box-shadow, 0.2s ease;
+  transition: top, box-shadow, 0.2s ease, -webkit-box-shadow;
 }
 
 .promotion-card:hover,
@@ -374,8 +365,6 @@ a:hover {
 }
 
 .promotion-card {
-  font-size: 14px;
-  background-color: #fff;
   height: 100%;
   border-radius: 20px;
 }
@@ -383,10 +372,6 @@ a:hover {
 .promotion-card .img-wrapper {
   padding-top: 44%;
   border-radius: 20px;
-}
-
-.promotion-card a {
-  color: #FF9100;
 }
 
 .promotion-page {
@@ -407,7 +392,8 @@ a:hover {
 }
 
 .card-page .img-wrapper img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card-page .badge {
@@ -469,20 +455,9 @@ a:hover {
   font-size: 18px;
 }
 
-.cart-page .cart-list-heading {
-  font-weight: 600;
-}
-
-.cart-page .cart-list .row {
-  border-top: 1px solid #F6F7F8;
-  border-bottom: 1px solid #F6F7F8;
-  border-top: 1px solid #FF4343;
-  border-bottom: 1px solid #37C8AB;
-}
-
 .cart-page .cart-list .img-wrapper {
-  padding-top: 50%;
-  max-width: 140px;
+  height: 140px;
+  width: 140px;
 }
 
 .cart-page .cart-list .badge {
@@ -504,24 +479,151 @@ a:hover {
 
 .img-wrapper {
   padding-top: 10%;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
   border-radius: 8px;
-  position: relative;
-  overflow: hidden;
   background-image: radial-gradient(circle, #febd01 50%, #ff9a00 100%);
 }
 
 .img-wrapper img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  line-height: 1px;
+}
+
+button,
+.btn {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.modal-dialog {
+  max-width: 660px;
+}
+
+.modal-footer button {
+  color: #fff;
+}
+
+.modal,
+.form-label,
+.form-control {
+  font-size: 14px;
+}
+
+.form-control {
+  line-height: 16px;
+}
+
+.required::after {
+  content: '*';
+  color: #C94D3F;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+}
+
+.form-check-input:checked {
+  background-color: #fff;
+  border-color: #C4C4C4;
+}
+
+.form-check-input[type='radio'] {
+  background-image: url(../img/icons/radio.svg);
+}
+
+.form-check-input:checked[type='radio'] {
+  background-image: url(../img/icons/radio-checked.svg);
+}
+
+.form-check-label {
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+.form-check-label + span,
+.form-check-label + p,
+.form-check-label + .invalid-feedback {
+  padding-left: 10px;
+}
+
+.form-check-input[type="checkbox"] {
+  background-image: none;
+}
+
+.form-check-input:checked[type='checkbox'] {
+  background-image: url(../img/icons/checkbox-checked.svg);
+}
+
+.form-check-label {
+  z-index: 2;
+}
+
+.form-check-label a {
+  z-index: 1;
+}
+
+small {
+  font-size: 12px;
+  color: #8D8D8D;
+}
+
+.fs-0 {
+  font-size: 0px;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.c-orange {
+  color: #FF9100;
+}
+
+.bg-orange {
+  background-color: #FF9100;
+}
+
+.bg-gray {
+  background-color: #8D8D8D;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF9100;
+}
+
+.stretched-link::after {
+  z-index: 0;
+}
+
+@media (min-width: 1400px) and (max-width: 1463px) {
+  .comments-section .swiper-button-prev {
+    left: 570px;
+  }
+  .comments-section .swiper-button-next {
+    right: 550px;
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -556,9 +658,6 @@ a:hover {
   .contacts-section .map {
     height: 330px;
   }
-  .cart-page .cart-list .img-wrapper {
-    width: 100%;
-  }
 }
 
 @media (max-width: 767.98px) {
@@ -572,6 +671,9 @@ a:hover {
     overflow-y: hidden;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+  }
+  .comments-section button {
+    position: static;
   }
   .comments-section .swiper-button-prev {
     left: 190px;
@@ -594,9 +696,6 @@ a:hover {
   }
   .promotions-section .swiper-button-prev, .promotions-section .swiper-button-next {
     top: 60px;
-  }
-  .comments-section button {
-    position: static;
   }
   .comments-section .swiper-pagination {
     right: 58px;
@@ -621,7 +720,8 @@ a:hover {
     top: 6px;
   }
   .modal .btn {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -630,96 +730,4 @@ a:hover {
     max-width: 1460px;
   }
 }
-
-svg {
-  flex-shrink: 0;
-  line-height: 1px;
-}
-
-button {
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
-
-.modal-dialog {
-  max-width: 660px;
-}
-
-.modal,
-.form-label,
-.form-control {
-  font-size: 14px;
-}
-
-.form-control {
-  line-height: 16px;
-}
-
-.red {
-  color: #C94D3F;
-}
-
-.required::after {
-  content: '*';
-  color: #C94D3F;
-}
-
-.form-check-input {
-  width: 20px;
-  height: 20px;
-}
-
-.form-check-input:checked {
-  background-color: #fff;
-  border-color: #C4C4C4;
-}
-
-.form-check-input[type='radio'] {
-  background-image: url(../img/icons/radio.svg);
-}
-
-.form-check-input:checked[type='radio'] {
-  background-image: url(../img/icons/radio-checked.svg);
-}
-
-.form-check-label {
-  padding-top: 3px;
-  padding-left: 10px;
-}
-
-.form-check-label + p,
-.form-check-label + .invalid-feedback {
-  padding-left: 10px;
-}
-
-.form-check-input[type="checkbox"] {
-  background-image: none;
-}
-
-.form-check-input:checked[type='checkbox'] {
-  background-image: url(../img/icons/checkbox-checked.svg);
-}
-
-small {
-  font-size: 12px;
-  color: #8D8D8D;
-}
-
-.bg-orange {
-  background-color: #FF9100;
-}
-
-.bg-gray {
-  background-color: #8D8D8D;
-}
-
-.form-check-label {
-  z-index: 2;
-}
-
-.form-check-label a {
-  z-index: 1;
-}
+/*# sourceMappingURL=style.css.map */

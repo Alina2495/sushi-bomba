@@ -93,10 +93,6 @@ header {
     }
 }
 
-.fs-0 {
-    font-size: 0px;
-}
-
 .badge {
     font-weight: 500;
     background-color: $green;
@@ -106,8 +102,9 @@ header {
 }
 
 .card {
-    font-weight: 600;
     border-radius: 10px;
+    font-size: 14px;
+    border: none;
     .img-wrapper {
         border-radius: 8px;
         padding-top: 83.25%;
@@ -278,7 +275,6 @@ input::-webkit-inner-spin-button {
 
 .comments-section {
     button {
-        color: $orange;
         font-weight: 600;
         position: absolute;
     }
@@ -313,20 +309,6 @@ footer {
     }
     address {
         font-size: 14px;
-    }
-}
-
-a {
-    color: currentColor;
-    text-decoration: none;
-    &:hover {
-        color: $orange;
-    }
-}
-
-.stretched-link {
-    &::after {
-        z-index: 0;
     }
 }
 
@@ -384,16 +366,11 @@ a {
 }
 
 .promotion-card {
-    font-size: 14px;
-    background-color: $white;
     height: 100%;
     border-radius: 20px;
     .img-wrapper {
         padding-top: 44%;
         border-radius: 20px;
-    }
-    a {
-        color: $orange;
     }
 }
 
@@ -462,18 +439,9 @@ a {
 .cart-page {
     .cart-list {
         font-size: 18px;
-        &-heading {
-            font-weight: 600;
-        }
-        .row {
-            border-top: 1px solid #F6F7F8;
-            border-bottom: 1px solid #F6F7F8;
-            border-top: 1px solid $pink;
-            border-bottom: 1px solid $green;
-        }
         .img-wrapper {
-            padding-top: 50%;
-            max-width: 140px;
+            height: 140px;
+            width: 140px;
         }
         .badge {
             top: 0;
@@ -499,17 +467,146 @@ a {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     border-radius: 8px;
-    position: relative;
-    overflow: hidden;
     background-image: radial-gradient(circle, rgba(254, 189, 1, 1) 50%, rgba(255, 154, 0, 1) 100%);
     img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
         object-fit: cover;
         object-position: center;
+    }
+}
+
+svg {
+    flex-shrink: 0;
+    line-height: 1px;
+}
+
+button,
+.btn {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+}
+
+.modal {
+    &-dialog {
+        max-width: 660px;
+    }
+    &-footer {
+        button {
+            color: $white;
+        }
+    }
+}
+
+.modal,
+.form-label,
+.form-control {
+    font-size: 14px;
+}
+
+.form-control {
+    line-height: 16px;
+}
+
+.required {
+    &::after {
+        content: '*';
+        color: #C94D3F;
+    }
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    &:checked {
+        background-color: $white;
+        border-color: #C4C4C4;
+    }
+}
+
+.form-check-input[type='radio'] {
+    background-image: url(../img/icons/radio.svg);
+}
+
+.form-check-input:checked[type='radio'] {
+    background-image: url(../img/icons/radio-checked.svg);
+}
+
+.form-check-label {
+    padding-top: 3px;
+    padding-left: 10px;
+    +span,
+    +p,
+    +.invalid-feedback {
+        padding-left: 10px;
+    }
+}
+
+.form-check-input[type="checkbox"] {
+    background-image: none;
+}
+
+.form-check-input:checked[type='checkbox'] {
+    background-image: url(../img/icons/checkbox-checked.svg);
+}
+
+.form-check-label {
+    z-index: 2;
+    a {
+        z-index: 1;
+    }
+}
+
+small {
+    font-size: 12px;
+    color: $gray;
+}
+
+.fs-0 {
+    font-size: 0px;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.c-orange {
+    color: $orange;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+    &:hover {
+        color: $orange;
+    }
+}
+
+.stretched-link {
+    &::after {
+        z-index: 0;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1463px) {
+    .comments-section {
+        .swiper-button {
+            &-prev {
+                left: 570px;
+            }
+            &-next {
+                right: 550px;
+            }
+        }
     }
 }
 
@@ -559,13 +656,13 @@ a {
             height: 330px;
         }
     }
-    .cart-page {
-        .cart-list {
-            .img-wrapper {
-                width: 100%;
-            }
-        }
-    }
+    // .cart-page {
+    //     .cart-list {
+    //         .img-wrapper {
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 }
 
 @media (max-width: 767.98px) {
@@ -581,6 +678,9 @@ a {
         -webkit-overflow-scrolling: touch;
     }
     .comments-section {
+        button {
+            position: static;
+        }
         .swiper-button {
             &-prev {
                 left: 190px;
@@ -614,9 +714,6 @@ a {
         }
     }
     .comments-section {
-        button {
-            position: static;
-        }
         .swiper-pagination {
             right: 58px;
             left: unset;
@@ -656,100 +753,5 @@ a {
 @media (min-width: 1464px) {
     .container {
         max-width: 1460px;
-    }
-}
-
-svg {
-    flex-shrink: 0;
-    line-height: 1px;
-}
-
-button // .btn
-{
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $white;
-}
-
-.modal {
-    &-dialog {
-        max-width: 660px;
-    }
-}
-
-.modal,
-.form-label,
-.form-control {
-    font-size: 14px;
-}
-
-.form-control {
-    line-height: 16px;
-}
-
-.red {
-    color: #C94D3F;
-}
-
-.required {
-    &::after {
-        content: '*';
-        color: #C94D3F;
-    }
-}
-
-.form-check-input {
-    width: 20px;
-    height: 20px;
-    &:checked {
-        background-color: $white;
-        border-color: #C4C4C4;
-    }
-}
-
-.form-check-input[type='radio'] {
-    background-image: url(../img/icons/radio.svg);
-}
-
-.form-check-input:checked[type='radio'] {
-    background-image: url(../img/icons/radio-checked.svg);
-}
-
-.form-check-label {
-    padding-top: 3px;
-    padding-left: 10px;
-    &+p,
-    &+.invalid-feedback {
-        padding-left: 10px;
-    }
-}
-
-.form-check-input[type="checkbox"] {
-    background-image: none;
-}
-
-.form-check-input:checked[type='checkbox'] {
-    background-image: url(../img/icons/checkbox-checked.svg);
-}
-
-small {
-    font-size: 12px;
-    color: $gray;
-}
-
-.bg-orange {
-    background-color: $orange;
-}
-
-.bg-gray {
-    background-color: $gray;
-}
-
-.form-check-label {
-    z-index: 2;
-    a {
-        z-index: 1;
     }
 }

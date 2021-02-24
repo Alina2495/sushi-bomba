@@ -100,16 +100,16 @@
 
                 <div class="swiper-banner swiper-container overflow-visible">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide position-relative img-wrapper">
-                            <img src="img/images/banner.jpg" alt="">
+                        <div class="swiper-slide position-relative img-wrapper overflow-hidden">
+                            <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/banner.jpg" alt="">
                             <a href="promotion.html" class="stretched-link"></a>
                         </div>
-                        <div class="swiper-slide position-relative img-wrapper">
-                            <img src="img/images/banner.jpg" alt="">
+                        <div class="swiper-slide position-relative img-wrapper overflow-hidden">
+                            <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/banner.jpg" alt="">
                             <a href="promotion.html" class="stretched-link"></a>
                         </div>
-                        <div class="swiper-slide position-relative img-wrapper">
-                            <img src="img/images/banner.jpg" alt="">
+                        <div class="swiper-slide position-relative img-wrapper overflow-hidden">
+                            <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/banner.jpg" alt="">
                             <a href="promotion.html" class="stretched-link"></a>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
                             <div>
                                 <div class="card h-100 p-3 pb-4 border-0">
                                     <div class="img-wrapper position-relative overflow-hidden mb-3">
-                                        <img class="position-absolute" src="img/images/product.jpg" alt="Сет «Америка»">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product.jpg" alt="Сет «Америка»">
                                     </div>
                                     <div class="badge position-absolute px-3 py-2">10%</div>
                                     <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
@@ -283,7 +283,7 @@
                             <div>
                                 <div class="card h-100 p-3 pb-4 border-0">
                                     <div class="img-wrapper position-relative overflow-hidden mb-3">
-                                        <img class="position-absolute" src="img/images/product2.jpg" alt="Сет «Америка»">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product2.jpg" alt="Сет «Америка»">
                                     </div>
                                     <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -303,9 +303,9 @@
                                     </div>
                                     <div class="btn-group d-block mt-auto" role="group" aria-label="Basic radio toggle button group">
                                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
-                                        <label class="btn" for="btnradio1">25 см</label>
+                                        <label class="btn d-inline-block" for="btnradio1">25 см</label>
                                         <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
-                                        <label class="btn" for="btnradio2">32 см</label>
+                                        <label class="btn d-inline-block" for="btnradio2">32 см</label>
                                     </div>
                                     <div class="cart-btn-wrapper position-absolute rounded-pill bg-white overflow-hidden">
                                         <div class="cart-btn rounded-pill p-0 overflow-hidden">
@@ -341,7 +341,7 @@
                             <div>
                                 <div class="card h-100 p-3 pb-4 border-0">
                                     <div class="img-wrapper position-relative overflow-hidden mb-3">
-                                        <img class="position-absolute" src="img/images/product3.jpg" alt="Сет «Америка»">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product3.jpg" alt="Сет «Америка»">
                                     </div>
                                     <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -394,7 +394,7 @@
                             <div>
                                 <div class="card h-100 p-3 pb-4 border-0">
                                     <div class="img-wrapper position-relative overflow-hidden mb-3">
-                                        <img class="position-absolute" src="img/images/product4.jpg" alt="Сет «Америка»">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product4.jpg" alt="Сет «Америка»">
                                     </div>
                                     <div class="badge position-absolute px-3 py-2">22%</div>
                                     <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
@@ -448,7 +448,7 @@
                             <div>
                                 <div class="card h-100 p-3 pb-4 border-0">
                                     <div class="img-wrapper position-relative overflow-hidden mb-3">
-                                        <img class="position-absolute" src="img/images/product4.jpg" alt="Сет «Америка»">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product4.jpg" alt="Сет «Америка»">
                                     </div>
                                     <div class="badge position-absolute px-3 py-2">22%</div>
                                     <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
@@ -549,22 +549,19 @@
         <section class="promotions-section py-5">
             <div class="container">
                 <div class="row">
-
                     <div class="col-12">
-
                         <div class="swiper-container promotions-swiper">
                             <h2 class="text-center">Спецпредложения и акции</h2>
-
                             <div class="swiper-wrapper mt-5">
-                                <div class="promotion-card swiper-slide position-relative overflow-hidden d-flex flex-column">
+                                <div class="promotion-card card swiper-slide overflow-hidden">
                                     <div class="img-wrapper overflow-hidden position-relative">
-                                        <img class="position-absolute" src="img/images/promotion.jpg" alt="">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/promotion.jpg" alt="">
                                     </div>
                                     <div class="px-3 py-4 d-flex flex-column flex-grow-1">
                                         <h6>Именинникам скидка -20%</h6>
                                         <p>Именинникам дарим скидку -20% на все роллы и пиццу. Скидка не действует на сеты, десерты, снеки. Акции и скидки не суммируются. Для получения подарка нужно предъявить паспорт курьеру. Акция действует 3 дня до и 3 дня после ДР.
                                             Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
-                                        <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
+                                        <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
                                             <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
                                             </svg> 
@@ -572,15 +569,15 @@
                                     </div>
                                 </div>
 
-                                <div class="promotion-card swiper-slide position-relative overflow-hidden d-flex flex-column">
+                                <div class="promotion-card card swiper-slide overflow-hidden">
                                     <div class="img-wrapper overflow-hidden position-relative">
-                                        <img class="position-absolute" src="img/images/promotion2.jpg" alt="">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/promotion2.jpg" alt="">
                                     </div>
                                     <div class="px-3 py-4 d-flex flex-column flex-grow-1">
                                         <h6>Новым клиентам дарим любой ролл или пиццу на выбор</h6>
                                         <p>К первому заказу дарим пиццу 25 см или любой ролл на выбор клиента, не превышающую по цене 329 ₽. Минимальная сумма заказа 1 000 ₽. Акции и скидки не суммируются. Необходимо сообщить оператору что вы новый клиент.
                                             Пиццу или ролл к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
-                                        <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
+                                        <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
                                             <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
                                             </svg> 
@@ -588,15 +585,15 @@
                                     </div>
                                 </div>
 
-                                <div class="promotion-card swiper-slide position-relative overflow-hidden d-flex flex-column">
+                                <div class="promotion-card card swiper-slide overflow-hidden">
                                     <div class="img-wrapper overflow-hidden position-relative">
-                                        <img class="position-absolute" src="img/images/promotion3.jpg" alt="">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/promotion3.jpg" alt="">
                                     </div>
                                     <div class="px-3 py-4 d-flex flex-column flex-grow-1">
                                         <h6>Любая пицца в подарок при заказе от 1 200 ₽</h6>
                                         <p>При заказе на сумму от 1 200 ₽ дарим любую пиццу диаметром 25 см на выбор клиента. Акция не действует при заказе сетов. Акции и скидки не суммируются. Скидки и подарки к вашему заказу добавляет оператор. Оператор
                                             свяжется с вами в течении 10 мин. после вашего заказа.</p>
-                                        <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
+                                        <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
                                             <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
                                             </svg> 
@@ -604,15 +601,15 @@
                                     </div>
                                 </div>
 
-                                <div class="promotion-card swiper-slide position-relative overflow-hidden d-flex flex-column">
+                                <div class="promotion-card card swiper-slide overflow-hidden">
                                     <div class="img-wrapper overflow-hidden position-relative">
-                                        <img class="position-absolute" src="img/images/promotion.jpg" alt="">
+                                        <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/promotion.jpg" alt="">
                                     </div>
                                     <div class="px-3 py-4 d-flex flex-column flex-grow-1">
                                         <h6>Именинникам скидка -20%</h6>
                                         <p>Именинникам дарим скидку -20% на все роллы и пиццу. Скидка не действует на сеты, десерты, снеки. Акции и скидки не суммируются. Для получения подарка нужно предъявить паспорт курьеру. Акция действует 3 дня до и 3 дня после ДР.
                                             Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
-                                        <a href="promotion.html" class="d-inline-block stretched-link mt-auto">Подробнее
+                                        <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
                                             <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
                                             </svg> 
@@ -647,7 +644,7 @@
                 <div class="row position-relative">
                     <div class="col-12 d-flex flex-column">
                         <h2 class="text-center mb-2">Отзывы наших клиентов</h2>
-                        <button name="review-modal" type="button" class="bg-transparent border-0 top-0 end-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Оставить отзыв</button>
+                        <button name="review-modal" type="button" class="bg-transparent border-0 top-0 end-0 c-orange text-decoration-underline mt-md-2 mt-lg-3" data-bs-toggle="modal" data-bs-target="#AddCommentModal">Оставить отзыв</button>
                     </div>
                     <div class="col-12 mt-3">
                         <div class="swiper-comments swiper-container">
@@ -775,22 +772,36 @@
 
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- Add Comment Modal -->
+    <div class="modal fade" id="AddCommentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AddCommentModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <form class="modal-content p-sm-4 px-xl-5 border-0 needs-validation" novalidate>
+                <div class="modal-header border-0">
+                    <h3 class="modal-title" id="AddCommentModalLabel">Оставить отзыв</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <fieldset class="mb-3">
+                        <label class="form-label" for="commentAuthorName">Имя</label>
+                        <input class="form-control py-3" type="text" id="commentAuthorName" placeholder="Имя" required>
+                        <div class="invalid-feedback">Заполните это поле</div>
+                    </fieldset>
+                    <fieldset class="mb-3">
+                        <label class="form-label" for="commentAuthorEmail">Электронная почта</label>
+                        <input class="form-control py-3" type="email" id="commentAuthorEmail" placeholder="Электронная почта" required>
+                        <div class="invalid-feedback">Заполните это поле</div>
+                    </fieldset>
+                    <fieldset>
+                        <label class="form-label" for="commentAuthorText">Ваш отзыв</label>
+                        <textarea class="form-control py-3" id="commentAuthorText" rows="7" placeholder="Напишите ваш отзыв" required></textarea>
+                        <div class="invalid-feedback">Заполните это поле</div>
+                    </fieldset>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                <div class="modal-footer border-0 justify-content-start justify-content-lg-start">
+                    <button type="submit" class="btn color-white bg-orange rounded-pill py-3 px-5 lh-1">Отправить</button>
+                    <button type="reset" class="btn bg-gray rounded-pill py-3 px-5 lh-1" data-bs-dismiss="modal">Отменить</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
