@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Work+Sans:wght@700&display=swap");
 html,
 body {
   height: 100%;
@@ -417,6 +419,7 @@ footer address {
 
 .card-page .img-wrapper {
   min-height: 200px;
+  padding-top: 80%;
 }
 
 .card-page .img-wrapper img {

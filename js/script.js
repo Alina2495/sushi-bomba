@@ -1,4 +1,4 @@
-//   show desktop header menu while hover to link 
+//   show desktop cart while hover to link 
 $(function() {
     $(".hover-cart").mouseenter(function() {
         $('.hidden-cart').removeClass("visually-hidden");
@@ -13,10 +13,10 @@ var swiper = new Swiper('.swiper-banner', {
     speed: 400,
     spaceBetween: 30,
     loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
