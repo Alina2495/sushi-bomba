@@ -12,14 +12,6 @@ body {
   line-height: 145%;
   overflow-x: hidden;
   max-width: 1920px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 h1,
@@ -51,6 +43,42 @@ header {
 
 header .container {
   overflow-x: hidden;
+}
+
+.header-cart {
+  -webkit-filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.15));
+  z-index: 500;
+}
+
+.hidden-cart {
+  width: 450px;
+  right: 0;
+  border-radius: 10px;
+}
+
+.hidden-cart .img-wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.hidden-cart .desc,
+.hidden-cart input {
+  font-size: 14px;
+}
+
+.hidden-cart .count {
+  width: 100px;
+  height: 24px;
+  background-color: #F3F3F3;
+}
+
+.hidden-cart .count input {
+  width: 56px;
+}
+
+.hidden-cart .bg-orange {
+  width: 310px;
 }
 
 .banner-section {
@@ -674,6 +702,12 @@ a:hover {
   .contacts-section .map {
     height: 330px;
   }
+  .cart-page .cart-list .col-lg-1 {
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -703,8 +737,7 @@ a:hover {
   .navbar-brand {
     width: 110px;
   }
-  .wish-icon,
-  .cart-icon {
+  .header-icon {
     width: 25px;
     height: 25px;
   }
@@ -739,12 +772,6 @@ a:hover {
   }
   .contacts-section .map {
     height: 230px;
-  }
-  .cart-page .cart-list .col-lg-1 {
-    width: auto;
-    position: absolute;
-    right: 0;
-    top: 6px;
   }
   .modal .btn {
     -ms-flex-preferred-size: 100%;

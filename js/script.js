@@ -1,3 +1,13 @@
+//   show desktop header menu while hover to link 
+$(function() {
+    $(".hover-cart").mouseenter(function() {
+        $('.hidden-cart').removeClass("visually-hidden");
+    });
+    $(".hover-cart").mouseleave(function() {
+        $('.hidden-cart').addClass("visually-hidden");
+    });
+});
+
 var swiper = new Swiper('.swiper-banner', {
     slidesPerView: 1,
     speed: 400,
