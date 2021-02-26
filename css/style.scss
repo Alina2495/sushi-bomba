@@ -655,6 +655,13 @@ a {
     }
 }
 
+.tab-pane .row,
+.dishes-section .nav-tabs {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 @media (min-width: 1400px) and (max-width: 1463px) {
     .comments-section {
         .swiper-button {
