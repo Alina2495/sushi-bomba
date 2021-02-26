@@ -380,7 +380,6 @@ footer address {
   content: "\2192";
 }
 
-.promotion-card,
 .card {
   top: 0;
   will-change: top, box-shadow;
@@ -393,7 +392,6 @@ footer address {
   transition: top, box-shadow, 0.2s ease, -webkit-box-shadow;
 }
 
-.promotion-card:hover,
 .card:hover {
   top: -5px;
   -webkit-filter: drop-shadow(0px 5px 20px #E1E1E3);
@@ -731,6 +729,17 @@ a:hover {
     overflow-y: hidden;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+  }
+  .card {
+    -webkit-filter: drop-shadow(0px 0px 15px #E1E1E3);
+    filter: drop-shadow(0px 0px 15px #E1E1E3);
+    -webkit-transition: none;
+    transition: none;
+  }
+  .card:hover {
+    top: 0px;
+    -webkit-filter: drop-shadow(0px 0px 15px #E1E1E3);
+    filter: drop-shadow(0px 0px 15px #E1E1E3);
   }
   .comments-section button {
     position: static;
