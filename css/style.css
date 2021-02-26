@@ -41,10 +41,11 @@ h6 {
 header {
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  height: 90px;
 }
 
-header .container {
-  overflow-x: hidden;
+header .collapse {
+  z-index: 400;
 }
 
 .header-cart {
@@ -53,7 +54,13 @@ header .container {
   z-index: 500;
 }
 
+.header-cart:hover > a {
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+}
+
 .hidden-cart {
+  top: 75px;
   width: 450px;
   right: 0;
   border-radius: 10px;

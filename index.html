@@ -14,20 +14,22 @@
 </head>
 
 <body class="d-flex flex-column mx-auto my-0">
+
+
     <header>
-        <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container-fluid container-lg">
+        <div class="container"></div>
+    </header>
+
+
+    <header class="p-0">
+        <nav class="navbar navbar-expand-lg bg-white p-0">
+            <div class="container-fluid align-items-center d-flex">
+
                 <a href="index.html" class="p-0 m-0 py-lg-3 fs-0 navbar-brand">Логотип
                     <img class="w-100" src="img/images/logo.png" alt="Суши Бомба">
                 </a>
-                <button class="navbar-toggler border-0 bg-transparent p-0 ms-3 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#sushinavbar" aria-controls="sushinavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="25" height="2.5" fill="#FF9A00"/>
-                        <rect y="7.50024" width="25" height="2.5" fill="#FF9A00"/>
-                        <rect y="15.0005" width="25" height="2.5" fill="#FF9A00"/>
-                    </svg>
-                </button>
-                <div class="collapse navbar-collapse py-3" id="sushinavbar">
+
+                <div class="collapse navbar-collapse bg-white py-3 align-items-center" id="sushinavbar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="menu.html">Меню</a></li>
                         <li class="nav-item"><a class="nav-link" href="promotions.html">Акции</a></li>
@@ -38,7 +40,7 @@
                     <!-- адрес и телефон -->
                     <div class="flex-wrap d-flex">
                         <!-- адрес -->
-                        <div class="me-3 d-flex align-items-start text-nowrap mb-3">
+                        <div class="me-3 d-flex align-items-start text-nowrap mb-3 mb-lg-0">
                             <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#303030"/>
                                 </svg>
@@ -71,14 +73,14 @@
                         </svg>
                         <a class="stretched-link fs-0" href="whishes.html">Избранное</a>
                     </div>
-                    <div class="position-relative bg-white header-cart">
+                    <div class="position-relative header-cart">
                         <!-- корзина -->
-                        <a href="cart.html" class="d-flex hover-cart">
+                        <a href="cart.html" class="d-flex hover-cart py-3 px-2">
                             <svg class="flex-shrink-0 header-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="48" height="48" rx="24" fill="#FF9100"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C11.4492 14 11 14.4492 11 15C11 15.5508 11.4492 16 12 16H14.2188L16.8438 26.5C17.0664 27.3906 17.8633 28 18.7812 28H20C18.3555 28 17 29.3555 17 31C17 32.6445 18.3555 34 20 34C21.6445 34 23 32.6445 23 31C23 29.3555 21.6445 28 20 28H29C27.3555 28 26 29.3555 26 31C26 32.6445 27.3555 34 29 34C30.6445 34 32 32.6445 32 31C32 29.3555 30.6445 28 29 28H30.25C31.1523 28 31.918 27.4023 32.1562 26.5312L34.75 17H18L18.5 19H32.1562L30.25 26H18.7812L16.1562 15.5C15.9336 14.6094 15.1367 14 14.2188 14H12ZM20 30C20.5625 30 21 30.4375 21 31C21 31.5625 20.5625 32 20 32C19.4375 32 19 31.5625 19 31C19 30.4375 19.4375 30 20 30ZM30 31C30 30.4375 29.5625 30 29 30C28.4375 30 28 30.4375 28 31C28 31.5625 28.4375 32 29 32C29.5625 32 30 31.5625 30 31Z" fill="white"/>
                         </svg>
-                            <div class="ms-2 text-end lh-1 d-noe">
+                            <div class="ms-2 text-end d-none d-lg-block">
                                 <div class="fw-bold">
                                     <span>0</span><span> ₽</span>
                                 </div>
@@ -152,6 +154,13 @@
                         </div>
                     </div>
                 </div>
+                <button class="navbar-toggler border-0 bg-transparent p-0 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#sushinavbar" aria-controls="sushinavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="25" height="2.5" fill="#FF9A00"/>
+                        <rect y="7.50024" width="25" height="2.5" fill="#FF9A00"/>
+                        <rect y="15.0005" width="25" height="2.5" fill="#FF9A00"/>
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
