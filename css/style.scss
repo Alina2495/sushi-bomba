@@ -50,9 +50,8 @@ h6 {
 
 header {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    height: 90px;
-    .collapse {
-        z-index: 400;
+    .navbar {
+        z-index: 100;
     }
 }
 
@@ -675,6 +674,9 @@ a {
 }
 
 @media (max-width: 1399.98px) {
+    .navbar-brand {
+        width: 150px;
+    }
     .comments-section {
         .swiper-button {
             &-prev {
@@ -688,8 +690,11 @@ a {
 }
 
 @media (max-width: 1199.98px) {
-    header .container {
-        max-width: 1000px;
+    .navbar-brand {
+        width: 100px;
+    }
+    .navbar-nav .nav-item {
+        font-size: 14px;
     }
     .comments-section {
         .swiper-button {
@@ -736,6 +741,13 @@ a {
 }
 
 @media (max-width: 767.98px) {
+    .navbar-brand {
+        width: 110px;
+    }
+    .header-icon {
+        width: 30px;
+        height: 30px;
+    }
     h1,
     h2 {
         font-size: 28px;
@@ -777,12 +789,8 @@ a {
 }
 
 @media (max-width: 575.98px) {
-    .navbar-brand {
-        width: 110px;
-    }
-    .header-icon {
-        width: 25px;
-        height: 25px;
+    .swiper-banner .swiper-slide {
+        padding-top: 58%;
     }
     .tab-pane {
         .row {

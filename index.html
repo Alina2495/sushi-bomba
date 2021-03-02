@@ -10,33 +10,27 @@
     <title>Sushi Bomba</title>
     <link rel="stylesheet" href="css/bootstrap-5.min.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body class="d-flex flex-column mx-auto my-0">
 
-
     <header>
-        <div class="container"></div>
-    </header>
-
-
-    <header class="p-0">
         <nav class="navbar navbar-expand-lg bg-white p-0">
-            <div class="container align-items-center d-flex">
-                <button class="navbar-toggler border-0 bg-transparent p-0 ms-3 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#sushinavbar" aria-controls="sushinavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid container-xl align-items-center d-flex">
+
+                <a href="index.html" class="order-1 p-0 m-0 py-lg-3 fs-0 navbar-brand flex-shrink-0">Логотип
+                    <img class="w-100" src="img/images/logo.png" alt="Суши Бомба">
+                </a>
+                <button class="order-4 navbar-toggler border-0 bg-transparent p-0 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#sushinavbar" aria-controls="sushinavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="25" height="2.5" fill="#FF9A00"/>
                         <rect y="7.50024" width="25" height="2.5" fill="#FF9A00"/>
                         <rect y="15.0005" width="25" height="2.5" fill="#FF9A00"/>
                     </svg>
                 </button>
-                <a href="index.html" class="p-0 m-0 py-lg-3 fs-0 navbar-brand">Логотип
-                    <img class="w-100" src="img/images/logo.png" alt="Суши Бомба">
-                </a>
-
-                <div class="collapse navbar-collapse bg-white py-3 align-items-center" id="sushinavbar">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="order-5 order-lg-2 collapse position navbar-collapse bg-white py-3 align-items-center" id="sushinavbar">
+                    <ul class="navbar-nav ms-lg-1 ms-xl-2 me-auto mb-2 mb-lg-0 ms-xxl-4 bg-white text-nowrap">
                         <li class="nav-item"><a class="nav-link" href="menu.html">Меню</a></li>
                         <li class="nav-item"><a class="nav-link" href="promotions.html">Акции</a></li>
                         <li class="nav-item"><a class="nav-link" href="payment.html">Доставка и оплата</a></li>
@@ -44,9 +38,9 @@
                         <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
                     </ul>
                     <!-- адрес и телефон -->
-                    <div class="flex-wrap d-flex">
+                    <div class="flex-wrap flex-lg-nowrap d-flex me-xxl-4">
                         <!-- адрес -->
-                        <div class="me-3 d-flex align-items-start text-nowrap mb-3 mb-lg-0">
+                        <div class="me-3 me-lg-2 d-flex align-items-start text-nowrap mb-3 mb-lg-0">
                             <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#303030"/>
                                 </svg>
@@ -70,7 +64,7 @@
                     </div>
                 </div>
                 <!-- избранное и корзина -->
-                <div class="d-flex justify-content-end ms-auto">
+                <div class="order-3 d-flex justify-content-end ms-auto ms-lg-2 ms-xl-3">
                     <!-- избранное -->
                     <div href="whishes.html" class="me-2 position-relative flex-shrink-1 align-items-center d-flex">
                         <svg class="header-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,16 +76,16 @@
                     <div class="position-relative header-cart">
                         <!-- корзина -->
                         <a href="cart.html" class="d-flex hover-cart py-3 px-2">
-                            <svg class="flex-shrink-0 header-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="flex-shrink-0 header-icon my-auto" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="48" height="48" rx="24" fill="#FF9100"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C11.4492 14 11 14.4492 11 15C11 15.5508 11.4492 16 12 16H14.2188L16.8438 26.5C17.0664 27.3906 17.8633 28 18.7812 28H20C18.3555 28 17 29.3555 17 31C17 32.6445 18.3555 34 20 34C21.6445 34 23 32.6445 23 31C23 29.3555 21.6445 28 20 28H29C27.3555 28 26 29.3555 26 31C26 32.6445 27.3555 34 29 34C30.6445 34 32 32.6445 32 31C32 29.3555 30.6445 28 29 28H30.25C31.1523 28 31.918 27.4023 32.1562 26.5312L34.75 17H18L18.5 19H32.1562L30.25 26H18.7812L16.1562 15.5C15.9336 14.6094 15.1367 14 14.2188 14H12ZM20 30C20.5625 30 21 30.4375 21 31C21 31.5625 20.5625 32 20 32C19.4375 32 19 31.5625 19 31C19 30.4375 19.4375 30 20 30ZM30 31C30 30.4375 29.5625 30 29 30C28.4375 30 28 30.4375 28 31C28 31.5625 28.4375 32 29 32C29.5625 32 30 31.5625 30 31Z" fill="white"/>
                         </svg>
-                            <div class="ms-2 text-end d-none d-lg-block">
+                            <div class="ms-2 text-end d-none d-sm-block">
                                 <div class="fw-bold">
-                                    <span>0</span><span> ₽</span>
+                                    <span>10 000</span><span> ₽</span>
                                 </div>
                                 <div><small>
-                                <span>0</span><span> товаров</span>
+                                <span>14</span><span> товаров</span>
                             </small></div>
                             </div>
                         </a>
@@ -161,12 +155,12 @@
                     </div>
                 </div>
 
+
             </div>
         </nav>
     </header>
 
     <main>
-
         <section class="banner-section mt-4 pt-2">
             <div class="container">
                 <h2 class="visually-hidden">Слайдер с акциями</h2>
@@ -857,7 +851,7 @@
                     </a>
                     <div>@sushibomba 2021</div>
                 </div>
-                <nav class="col-lg-5 py-2">
+                <nav class="col-lg-6 col-xl-5 py-2">
                     <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-between mb-lg-0">
                         <li><a href="menu.html">Меню</a></li>
                         <li><a href="promotions.html">Акции</a></li>
@@ -996,7 +990,7 @@
     <script src="js/bootstrap-5.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery(v.3.5.1).min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
