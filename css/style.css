@@ -828,7 +828,8 @@ a:hover {
 }
 
 @media (min-width: 1464px) {
-  .container {
+  .container,
+  .container-xl {
     max-width: 1460px;
   }
 }
