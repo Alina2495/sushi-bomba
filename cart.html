@@ -296,10 +296,49 @@
                                     <div class="invalid-feedback">Заполните это поле</div>
                                 </fieldset>
                                 <fieldset class="mb-4">
-                                    <label class="form-label required" for="orderUserCity">Город</label>
-                                    <input class="form-control py-3" type="text" id="orderUserCity" placeholder="Город" required>
+                                    <label class="form-label required" for="orderUserRegion">Район</label>
+                                    <select class="form-select py-3" id="orderUserRegion" required>
+                                      <option selected disabled value="">Выберите район доставки</option>
+                                      <option>Ново- Савинский</option>
+                                      <option>Кировский р-н</option>
+                                      <option>Советский р-н</option>
+                                      <option>Приволжский р-н</option>
+                                      <option>Вахитовский р-н</option>
+                                      <option>Московский р-н</option>
+                                      <option>Авиастроительный р-н</option>
+                                    </select>
+                                    <div class="invalid-feedback">Район доставки</div>
+                                </fieldset>
+
+                                <fieldset class="mb-4">
+                                    <label class="form-label required" for="orderUserStreet">Улица</label>
+                                    <input class="form-control py-3" type="text" id="orderUserStreet" placeholder="Улица" required>
                                     <div class="invalid-feedback">Заполните это поле</div>
                                 </fieldset>
+                                <div class="row">
+                                    <fieldset class="mb-4 col-6">
+                                        <label class="form-label required" for="orderUserHouse">Дом</label>
+                                        <input class="form-control py-3" type="text" id="orderUserHouse" placeholder="Дом" required>
+                                        <div class="invalid-feedback">Заполните это поле</div>
+                                    </fieldset>
+                                    <fieldset class="mb-4 col-6">
+                                        <label class="form-label" for="orderUserEntrance">Подъезд</label>
+                                        <input class="form-control py-3" type="text" id="orderUserEntrance" placeholder="Подъезд">
+                                        <div class="invalid-feedback">Заполните это поле</div>
+                                    </fieldset>
+                                </div>
+                                <div class="row">
+                                    <fieldset class="mb-4 col-6">
+                                        <label class="form-label" for="orderUserFloor">Этаж</label>
+                                        <input class="form-control py-3" type="text" id="orderUserFloor" placeholder="Этаж">
+                                        <div class="invalid-feedback">Заполните это поле</div>
+                                    </fieldset>
+                                    <fieldset class="mb-4 col-6">
+                                        <label class="form-label" for="orderUserApartment">Квартира (офис)</label>
+                                        <input class="form-control py-3" type="text" id="orderUserApartment" placeholder="Квартира (офис)">
+                                        <div class="invalid-feedback">Заполните это поле</div>
+                                    </fieldset>
+                                </div>
                                 <fieldset>
                                     <label class="form-label" for="commentAuthorText">Комментарий</label>
                                     <textarea class="form-control py-3" id="commentAuthorText" rows="5" placeholder="Комментарий к заказу (по желанию)"></textarea>

@@ -571,11 +571,13 @@ button,
 
 .modal,
 .form-label,
-.form-control {
+.form-control,
+.form-select {
   font-size: 14px;
 }
 
-.form-control {
+.form-control,
+.form-select {
   line-height: 16px;
 }
 
