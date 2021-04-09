@@ -178,6 +178,7 @@ header .navbar {
 }
 
 .card ins {
+  white-space: nowrap;
   font-size: 18px;
   color: #FF9100;
 }
@@ -555,6 +556,11 @@ button,
 .product-modal .btn-close {
   top: 10px;
   right: 10px;
+}
+
+.product-modal .img-wrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .product-modal dl {
