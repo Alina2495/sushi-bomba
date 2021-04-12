@@ -10,7 +10,7 @@
     <title>Sushi Bomba</title>
     <link rel="stylesheet" href="css/bootstrap-5.min.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="d-flex flex-column mx-auto my-0">
@@ -1293,7 +1293,7 @@
                         <div class="d-flex align-items-end justify-content-between">
                             <div class="d-flex flex-column price">
                                 <del class="mb-2">280 ₽</del>
-                                <ins class="text-decoration-none fw-6 ">157 ₽</ins>
+                                <ins class="text-decoration-none fw-6">157 ₽</ins>
                             </div>
                             <div class="cart-btn rounded-pill p-0 overflow-hidden">
                                 <div class="quantity-block h-100 w-100 d-flex justify-content-between align-items-center">
@@ -1357,6 +1357,48 @@
                     <button type="reset" class="btn bg-gray rounded-pill py-3 px-5 lh-1" data-bs-dismiss="modal">Отменить</button>
                 </div>
             </form>
+        </div>
+    </div>
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+      </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+        Launch static backdrop modal
+      </button>
+
+    <!-- Modal loader 1 -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content px-3 text-center align-items-center">
+                <h3 class="modal-title my-5" id="staticBackdropLabel">Ваш заказ оформляется:</h3>
+                <div class="position-relative mb-5" style="width: 110px; height: 110px;">
+                    <img class="position-absolute top-50 start-50 translate-middle" src="img/icons/pizza-modal-icon.svg" style="width: 55px; height: 55px;">
+                    <img class="position-absolute h-100 w-100 top-0 start-0 icon-load" src="img/icons/pizza-modal-load.svg">
+                </div>
+                <div class="col-10 mb-5" style="max-width: 340px;">
+                    <div class="modal-loader mb-2">
+                        <div class="modal-loader-progress" style="width: 0%"></div>
+                    </div>
+                    <span>64%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal loader 2-->
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="mb-5 mt-3 px-3 px-sm-4">
+                    <h3>Спасибо за заказ!</h3>
+                    <p class="h4 my-4">В ближайшее время с Вами свяжется наш менеджер для подтверждения заказа.</p>
+                    <button type="button" class="btn px-4 bg-orange color-white rounded-pill" data-bs-dismiss="modal">Ок</button>
+                </div>
+            </div>
         </div>
     </div>
 
